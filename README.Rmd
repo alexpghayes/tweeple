@@ -32,7 +32,7 @@ devtools::install_github("alexpghayes/tweeple")
 
 To create an HTML report on a set of Twitter users, use `create_report()`. For example:
 
-```{r}
+```{r generate-sample-report}
 library(tweeple)
 
 rohe_lab <- c(
@@ -52,7 +52,7 @@ This results in a report that looks like the following:
 
 You can also include recent tweets in the report to get a feel for the type of content each user engages with with:
 
-```{r message = FALSE}
+```{r generate-sample-report-with-recent-tweets}
 create_report(
   rohe_lab,
   recent_tweets = 3,
@@ -63,3 +63,7 @@ create_report(
 This results in a report that looks like:
 
 ![sample report with recent tweets](man/figures/README-sample-report-with-recent-tweets.png)
+
+## These reports are ugly and I want to make them better
+
+Please do! Contributions are welcome.

@@ -53,9 +53,14 @@ create_report(
   recent_tweets = 3,
   output_file = "rohe_lab_with_recent_tweets.html"
 )
+#> Generated report is available at "C:/Users/alex/Desktop/tweeple/rohe_lab_with_recent_tweets.html".
 ```
 
 This results in a report that looks like:
 
 ![sample report with recent
 tweets](man/figures/README-sample-report-with-recent-tweets.png)
+
+## These reports are ugly and I want to make them better
+
+Please do\! Contributions are welcome.
