@@ -1,0 +1,23 @@
+Package: tweeple
+Title: Generate Reports on Twitter Users
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alex",
+           family = "Hayes",
+           role = c("aut", "cre"),
+           email = "alexpghayes@gmail.com",
+           comment = c(ORCID = "0000-0002-4985-5160"))
+Description: Produces HTML reports that provide basic summaries of Twitter
+    accounts.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    rtweet,
+    stringr,
+    rmarkdown,
+    glue,
+    httr,
+    dplyr,
+    knitr
+RoxygenNote: 7.0.2

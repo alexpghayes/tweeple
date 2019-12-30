@@ -1,0 +1,21 @@
+---
+title: "Twitter user report"
+date: "`r Sys.Date()`"
+output: html_document
+params:
+  user_ids: user_ids
+  recent_tweets: recent_tweets
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE
+)
+
+library(tweeple)
+```
+
+```{r create-bio-list}
+report_bio(params$user_ids, params$recent_tweets)
+```
+
