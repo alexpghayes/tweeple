@@ -102,7 +102,7 @@ report_bio <- function(user_ids, recent_tweets = 0) {
 
       for (tweet_index in 1:recent_tweets) {
         status_id <- user_timeline$status_id[tweet_index]
-        tweet_as_html <- tweet_embed(screen_name, status_id)
+        tweet_as_html <- tweet_embed(screen_name, status_id, align = "center")
         item <- append(item, tweet_as_html)
       }
     }

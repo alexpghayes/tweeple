@@ -1,3 +1,6 @@
 ^tweeple\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^README\.Rmd$
+rohe_lab_without_recent_tweets.html
+rohe_lab_with_recent_tweets.html

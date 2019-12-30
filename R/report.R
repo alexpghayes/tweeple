@@ -53,20 +53,19 @@ create_report <- function(
 
   report_dir <- system.file("tweep_report_template.Rmd", package = "tweeple")
 
-  # rmarkdown::render()
-  render(
+  suppressMessages(rmarkdown::render(
     input = report_dir,
     output_format = output_format,
     output_file = output_file,
     output_dir = output_dir,
     intermediates_dir = output_dir,
+    quiet = TRUE,
     params = list(user_ids = user_ids, recent_tweets = recent_tweets)
-  )
+  ))
 
   # open the report
   report_path <- path.expand(file.path(output_dir, output_file))
   utils::browseURL(report_path)
 
-  # print path to report
-  message(paste0("\n\nReport is generated at \"", report_path, "\"."))
+  message(paste0("Generated report is available at \"", report_path, "\"."))
 }
