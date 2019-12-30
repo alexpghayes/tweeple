@@ -21,3 +21,5 @@ Imports:
     dplyr,
     knitr
 RoxygenNote: 7.0.2
+URL: https://github.com/alexpghayes/tweeple
+BugReports: https://github.com/alexpghayes/tweeple/issues
